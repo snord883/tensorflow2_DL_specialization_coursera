@@ -11,7 +11,7 @@ Option2:
 <hr>
 <hr>
 
-## **Convolutional and Pooling Layers:** 
+## **Convolutional and Pooling Layers:**
 - 2 Required arguments:
     1. Number of filters
     2. Shape of the convolutional kernel
