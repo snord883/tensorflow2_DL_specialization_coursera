@@ -114,3 +114,67 @@ Defaults:
         - which means that the direction is automatically inferred by the quantity name
 
 ![alt_text](./images/early_stopping.JPG 'image')
+
+<hr>
+<hr>
+
+## **Saving and Loading Model Weights**
+
+![alt_text](./images/save_weights.JPG 'image')
+
+- The formats used by Keras is the HDF5 format.
+    - Most models it doesn't matter what format it's saved in, but recommended to use HDF5.
+
+![alt_text](./images/save_weights2.JPG 'image')
+
+- Manually save weights:
+
+![alt_text](./images/save_weights3.JPG 'image')
+
+<hr>
+
+![alt_text](./images/save_weights4.JPG 'image')
+- the *save_freq* argument specifies the number of **samples** and **not** the number of **training iterations**. So here *my_model* would save the weights every 1,000 samples and I have a batch size of 16 and that means that my_model would save every 62 or 63 iterations.
+- Other arguments:
+    - *save_best_only*: defaults to *False*
+    - *monitor*: defaults to *val_loss*
+    - *mode*: default to *auto*
+- Can also dynamically name the files
+
+![alt_text](./images/save_weights5.JPG 'image')
+
+<hr>
+
+- Load weights:
+    -  Remember that we've only saved the weights and not the model architecture. So we still have to have the code to rebuild the model.
+
+![alt_text](./images/load_weights.JPG 'image')
+
+<hr>
+
+## **Saving the Entire Model**
+![alt_text](./images/save_model.JPG 'image')
+- To save the model manually:
+
+![alt_text](./images/save_model2.JPG 'image')
+
+- To load model:
+
+![alt_text](./images/load_model.JPG 'image')
+
+<hr>
+<hr>
+<hr>
+
+## **Loading pre-trained Keras models**
+[Some Model Options Here](https://keras.io/api/applications/)
+![alt_text](./images/preloaded_models.JPG 'image')
+- *~/.keras/models/*
+    - is where the models will be downloaded and saved
+- *include_top*: By default, this is equal to true in which case the complete classifier model is downloaded and instantiated. However, if you set include top to be false, the fully connected layer at the top of the network isn't loaded. So what you end up with is a headless model that you can use for things like transfer learning applications.
+
+<hr>
+<hr>
+
+## **TensorFlow Hub Modules**
+[TF Hub](https://tfhub.dev/)
