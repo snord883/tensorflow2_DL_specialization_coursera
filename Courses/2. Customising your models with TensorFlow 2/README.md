@@ -79,3 +79,19 @@
 - Entire models can also be frozen:
 
 ![alt_text](./images/freeze3.JPG 'image')
+
+
+<hr>
+<hr>
+<hr>
+
+## **Dataset Generators**
+- Used when you have datasets that are too large to fit into memory.
+
+![alt_text](./images/generator1.JPG 'image')
+![alt_text](./images/generator2.JPG 'image')
+
+<hr>
+
+## **Keras Image Data Augmentation**
+![alt_text](./images/generator3.JPG 'image')
