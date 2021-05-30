@@ -1,5 +1,7 @@
 # **Welcome to Customising your Models with TensorFlow 2**
 
+The Tensorflow embedding projector can be found [here](https://projector.tensorflow.org/)
+
 ## **The Keras Functional API**
 - Main difference is, instead of passing each layer of the model in with a list through *Sequetial*, we pass the last layer into the next as an argument to a function call
 
@@ -95,3 +97,58 @@
 
 ## **Keras Image Data Augmentation**
 ![alt_text](./images/generator3.JPG 'image')
+
+<hr>
+<hr>
+<hr>
+
+## **Sequence Modeling**
+- Padding sequences that are of different length
+
+![alt_text](./images/pad_sequences.JPG 'image')
+![alt_text](./images/pad_sequences2.JPG 'image')
+
+- Masking
+
+![alt_text](./images/masking.JPG 'image')
+![alt_text](./images/masking2.JPG 'image')
+
+<hr>
+
+## **The Embedding Layer**
+![alt_text](./images/embedding.JPG 'image')
+![alt_text](./images/embedding2.JPG 'image')
+
+<hr>
+
+## **Recurrent Neural Network Layers**
+![alt_text](./images/simple_rnn.JPG 'image')
+
+Long Short Term Memory (LSTM):
+
+![alt_text](./images/lstm.JPG 'image')
+
+Gated Recurrent Units layer (GRU):
+
+![alt_text](./images/gru.JPG 'image')
+
+<hr>
+
+## **Stacked RNNs and the Bidirectional Wrapper**
+![alt_text](./images/stack_rnn.JPG 'image')
+
+
+![alt_text](./images/bidirectional.JPG 'image')
+
+- Bidirectional:
+    - You can specify different layers for forward and backward
+        - Arguments: **layer** and **backward_layer** respectively
+            - Default is same layers for both directions
+
+![alt_text](./images/bidirectional2.JPG 'image')
+
+
+![alt_text](./images/bidirectional3.JPG 'image')
+
+
+![alt_text](./images/bidirectional4.JPG 'image')
