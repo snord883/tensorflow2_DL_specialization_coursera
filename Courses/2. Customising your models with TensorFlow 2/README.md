@@ -152,3 +152,45 @@ Gated Recurrent Units layer (GRU):
 
 
 ![alt_text](./images/bidirectional4.JPG 'image')
+
+<hr>
+<hr>
+<hr>
+
+## **Model Subclassing and Custom Training Loops**
+- Create your layers in the initializer and define the forward pass in the call method
+![alt_text](./images/custom_model.JPG 'image')
+
+- Multiple layer can be added to the custom model:
+
+![alt_text](./images/custom_model2.JPG 'image')
+
+<hr>
+
+## **Custom Layers**
+![alt_text](./images/custom_layer.JPG 'image')
+
+- Shortcut:
+
+![alt_text](./images/custom_layer2.JPG 'image')
+
+<hr>
+
+## **Automatic Differentiation**
+![alt_text](./images/auto_diff.JPG 'image')
+
+![alt_text](./images/auto_diff2.JPG 'image')
+
+![alt_text](./images/auto_diff3.JPG 'image')
+
+<hr>
+
+## **Custom Loops**
+![alt_text](./images/custom_loops.JPG 'image')
+
+<hr>
+
+## **tf.function Decorator**
+- Helps speed up the computation
+
+![alt_text](./images/decorator.JPG 'image')
